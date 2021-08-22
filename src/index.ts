@@ -15,8 +15,8 @@ type Options = {
   cwd?: string;
 };
 
-const begin = "-----BEGIN RSA PRIVATE KEY-----";
-const end = "-----END RSA PRIVATE KEY-----";
+const begin = "-----BEGIN PRIVATE KEY-----";
+const end = "-----END PRIVATE KEY-----";
 
 export function getPrivateKey(options: Options = {}): string | null {
   const env = options.env || process.env;
